@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Employee</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h2 class="logo">EMS</h2>
+    <ul>
+      <li><a href="index.html">🏠Home</a></li>
+      <li><a href="new-contact.html">📃New Contact</a></li>
+      <li><a href="view-contacts.html">🔍View Contacts</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Add New Employee</h2>
+
+    <form id="employeeForm">
+      <label>Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label>Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <label>Email</label>
+      <input type="email" id="email" required>
+
+      <label>Phone</label>
+      <input type="text" id="phone">
+
+      <label>Department</label>
+      <input type="text" id="department">
+
+  <label for="position">Position</label>
+  <select id="position" name="position" required>
+    
+    <option value="" disabled selected>Select Position</option>
+    <option value="Manager">Manager</option>
+    <option value="Developer">Software Developer</option>
+    <option value="Designer">Designer</option>
+    <option value="HR">HR</option>
+  </select><br><br>
+
+      <button type="submit">Add Employee</button>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
